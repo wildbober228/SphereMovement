@@ -12,19 +12,10 @@ public class ZigZag : AbstractMoveSphere
     float speed;
 
     [SerializeField]
-    float angle = 0;
-    [SerializeField]
-    float radius = 0.5f;
-
-    [SerializeField]
     GameObject buttons;
-    float x;
-    float z;
-    public float pingPong;
     void Start()
     {
-        x = -5;
-        z = 0;
+      
         start_position = this.transform.position;
     }
 
@@ -61,7 +52,4 @@ public class ZigZag : AbstractMoveSphere
         buttons.SetActive(false);
         base.EnableSphere();
     }
-
-
-
 }
